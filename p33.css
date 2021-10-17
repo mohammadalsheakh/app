@@ -1,0 +1,408 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    position: relative;
+}
+#header{
+    width: 100%;
+    height: 100px;
+
+}
+#div_header1{
+    width: 70%;
+    height: 100%;
+    background-color: red;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#div_header2{
+    width: 30%;
+    height: 100%;
+    float: right;
+    
+}
+.aa{
+    text-decoration: none;
+    width: 25%;
+}
+.head_bar{
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+
+}
+.head_bar:hover{
+    background-color: white;
+    color: black;
+}
+
+#head_bar1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#head_bar1_1{
+    width: 25px;
+    height: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    
+}
+
+.bar_span{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+#head_bar1_1:hover{
+    background-color: white;
+}
+#head_bar1_1:hover .bar_span{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+}
+#sub_bar1{
+    
+    display: none;
+}
+#head_bar1_1:hover #sub_bar1 {
+    display: block;
+    width: fit-content;
+    background-color: red;
+    
+    
+    position: relative;
+    top: 150px;
+    right: 35px;
+    
+}
+#head_bar1_1:hover #mylist1{
+    list-style: none;
+    height: 200px;
+    width:fit-content;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#head_bar1_1:hover .my_li{
+    
+    border: black solid 2px;
+}
+#div_header2{
+    position: relative;
+}
+#mohammad_image{
+    height: 100%;
+    float: right;
+    border-radius: 50%;
+}
+#mohammad_name{
+    line-height: 100px;
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#div_header2::before{
+    content: '';
+    width: 5px;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+
+}
+#main{
+    width: 100%;
+    height: 450px;
+    margin-top: 3px;
+}
+#article_1{
+    width:70%;
+    height: 100%;
+    background-color: rgb(224, 53, 53);
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+}
+@keyframes color {
+    from{
+        background-color: white;
+
+    }
+    to{
+        background-color: rgb(224, 53, 53) ;
+    }
+}
+#aticle_1_div_1{
+    width: 60%;
+    height: 50%;
+    background-color: white;
+    text-align: center;
+}
+#video{
+    position: relative;
+    height: 70%;
+    width: 80%;
+    top: 20px;
+}
+#h2{
+    width: 75%;
+    border-bottom: solid red 2px;
+    position: relative;
+    left: 50px;
+    
+}
+#article_2{
+    width: 30%;
+    height: 100%;
+
+}
+#article_2_div2_1{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    border-bottom: solid red 2px;
+    
+}
+#civil{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 80%;
+}
+#article_2_div2_2{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.social_image{
+    height: 50px;
+    border-bottom: red 2px solid;
+    margin: 15px 0px;
+}
+
+.social_image:hover{
+    height: 60px;
+    border-color: black;
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+#footer_div1{
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0px;
+    
+}
+#footer_div2{
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0px;
+    
+}
+.footer_a1{
+    width: 30%;
+    height: 90%;
+}
+
+
+.footer_a2{
+    width: 30%;
+    height: 90%;
+}
+.footer_image1{
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+.footer_image2{
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+#civil_h2{
+    font-size: 20px;
+    position: relative;
+    bottom: 10px;
+}
+@media only screen and (max-width:930px) and (min-width:850px){
+    #div_header1{
+        width: 65%;
+    }
+    #div_header2{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width:850px) and (min-width:730px){
+    #div_header1{
+        width: 60%;
+    }
+    #div_header2{
+        width: 40%;
+    }
+    #article_1{
+        width: 65%;
+
+    }
+    #article_2{
+        width: 35%;
+    }
+    #aticle_1_div_1{
+        width: 70%;
+    }
+    .footer_a1{
+        height: 80%;
+        margin-top: 10px; 
+     }
+        
+    .footer_a2{
+        height: 80%;  }
+        }
+
+@media only screen and (max-width:730px) and (min-width:650px){
+    #div_header1{
+        width: 50%;
+    }
+    #div_header2{
+        width: 50%;
+    }
+    #article_1{
+        width: 60%;
+
+    }
+    #article_2{
+        width: 40%;
+    }
+    #aticle_1_div_1{
+        width: 80%;
+    }
+    .footer_a1{
+        height: 70%;
+        margin-top: 10px; 
+     }
+        
+    .footer_a2{
+        height: 70%;  }
+        }
+ @media only screen and (max-width:650px) and (min-width:600px){
+    .footer_a1{
+        height: 65%;
+        margin-top: 20px; 
+     }
+        
+    .footer_a2{
+        height: 65%;  }
+        }
+
+
+ 
+
+
+
+@media only screen and (max-width:730px){
+    
+    #div_header1{
+        width: 100%;
+        float: none;
+    }
+    #div_header2{
+        width: 100%;
+        float: none;
+        text-align: center;
+
+    }
+    #mohammad_name{
+        font-size: 22px;
+    }
+    #div_header2::before{
+        width: 0%;
+    }
+    #article_1{
+        width: 100%;
+        float: none;
+
+    }
+    #article_2{
+        width: 100%;
+        float: none;
+
+    }
+    #aticle_1_div_1{
+        width: 80%;
+    }
+    footer{
+        position: relative;
+        top: 450px;
+        
+    }
+
+
+}
+@media only screen and (max-width:600px){
+    #footer_div1{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position:relative ;
+        top: 200px;
+    }
+    #footer_div2{
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        top: 830px;
+
+
+    }
+    .footer_a1{
+width: 70%; 
+padding-top: 10px;  }
+
+.footer_a2{
+    width: 70%;  
+padding-top: 10px;  }
+ 
+  }
+    
+
